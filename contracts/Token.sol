@@ -32,6 +32,7 @@ contract Token {
         decimals = tokenDecimal;
         totalSupply += supply;
         balanceOf[msg.sender] += supply;
+        owner = msg.sender;
     }
 
     /// @notice transfer the token to the receipent address
